@@ -42,12 +42,19 @@
             margin-bottom: 8px;
         }
 
-        /* UPDATED TO RED */
+        /* UPDATED CALL INFO */
         .call-info {
-            margin-top: 10px;
-            font-size: 1rem;
+            margin-top: 15px;
+            font-size: 1.4rem; /* bigger */
             font-weight: bold;
-            color: #d62828; /* RED */
+        }
+
+        .call-info .label {
+            color: white; /* “Or call us” */
+        }
+
+        .call-info .number {
+            color: #d62828; /* red number */
         }
     </style>
 </head>
@@ -72,7 +79,11 @@
     <h1>Gas and Oil Boiler Servicing You Can Trust</h1>
     <p>Serving Yeovil, Sherborne, Ilchester, Martock, South Petherton, and surrounding areas.</p>
     <a class="cta-btn" href="#contact">Book a Service</a>
-    <div class="call-info">📞 Or call us: 01234 567890</div>
+
+    <div class="call-info">
+        <span class="label">📞 Or call us:</span>
+        <span class="number"> 01234 567890</span>
+    </div>
 </div>
 
 <div class="section" id="services">
@@ -107,7 +118,7 @@
     <h2>Book a Service</h2>
     <p>Fill out the form below and we’ll confirm your booking as soon as possible.</p>
 
-    <!-- Booking Form (Formspree - UPDATED) -->
+    <!-- Booking Form -->
     <form action="https://formspree.io/f/xkjwkjkg" method="POST">
 
         <label for="name"><strong>Your Name:</strong></label><br>
@@ -141,12 +152,15 @@
 
         <button type="submit" class="cta-btn">Send Booking Request</button>
 
-        <div class="call-info">📞 Prefer to call? 01234 567890</div>
+        <div class="call-info">
+            <span class="label">📞 Prefer to call?</span>
+            <span class="number"> 01234 567890</span>
+        </div>
     </form>
 
     <hr style="margin:40px 0; border:0; border-top:1px solid #ccc;">
 
-    <!-- Request a Call Back (Formspree - UNCHANGED) -->
+    <!-- Callback Form -->
     <h2>Request a Call Back</h2>
     <p>Prefer to talk first? Leave your details and we’ll call you back.</p>
 
