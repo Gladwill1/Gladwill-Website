@@ -98,14 +98,17 @@
     <h2>Book a Service</h2>
     <p>Fill out the form below and we’ll confirm your booking as soon as possible.</p>
 
-    <!-- Booking Form -->
-    <form action="mailto:gladwillheating@outlook.com" method="post" enctype="text/plain">
+    <!-- Booking Form (Formspree) -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
 
         <label for="name"><strong>Your Name:</strong></label><br>
         <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
 
         <label for="phone"><strong>Your Phone Number:</strong></label><br>
         <input type="text" id="phone" name="phone" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
+
+        <label for="email"><strong>Your Email:</strong></label><br>
+        <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
 
         <label for="fuel"><strong>Type of Service:</strong></label><br>
         <div class="note">We currently do not offer LPG or electric servicing</div>
@@ -125,16 +128,18 @@
         style="width:100%; padding:10px; margin-bottom:15px;"
         placeholder="Please include boiler or cooker type, brand/model if known, any symptoms or issues, and anything else that may help."></textarea><br>
 
+        <input type="hidden" name="_replyto" value="gladwillheating@outlook.com">
+
         <button type="submit" class="cta-btn">Send Booking Request</button>
     </form>
 
     <hr style="margin:40px 0; border:0; border-top:1px solid #ccc;">
 
-    <!-- Request a Call Back -->
+    <!-- Request a Call Back (Formspree) -->
     <h2>Request a Call Back</h2>
     <p>Prefer to talk first? Leave your details and we’ll call you back.</p>
 
-    <form action="mailto:gladwillheating@outlook.com" method="post" enctype="text/plain">
+    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
 
         <label for="cb-name"><strong>Your Name:</strong></label><br>
         <input type="text" id="cb-name" name="name" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
@@ -150,6 +155,8 @@
         <label for="cb-details"><strong>Additional Details (optional):</strong></label><br>
         <textarea id="cb-details" name="details" rows="4"
         style="width:100%; padding:10px; margin-bottom:15px;"></textarea><br>
+
+        <input type="hidden" name="_replyto" value="gladwillheating@outlook.com">
 
         <button type="submit" class="cta-btn">Request Call Back</button>
     </form>
