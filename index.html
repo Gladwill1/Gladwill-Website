@@ -6,12 +6,21 @@
     <title>Oil and Gas Heating</title>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18403361371"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18405245591"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'AW-18403361371');
+      gtag('config', 'AW-18405245591');
+    </script>
+
+    <!-- Google Ads Conversion for Form Submission -->
+    <script>
+        function gtag_form_submission() {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18405245591/REPLACE_WITH_YOUR_LABEL'
+            });
+        }
     </script>
 
     <style>
@@ -122,7 +131,7 @@
 
         <div class="service-box">
             <h3>Cooker Servicing</h3>
-            <p>Professional servicing for gas and oil cookers to ensure safe, efficient operation.</p>
+            <p>Professional servicing for gas and electric cookers to ensure safe, efficient operation.</p>
         </div>
 
     </div>
@@ -137,7 +146,8 @@
     <h2>Book a Service</h2>
     <p>Fill out the form below and we’ll confirm your booking as soon as possible.</p>
 
-    <form action="https://formspree.io/f/xkjwkjkg" method="POST">
+    <!-- FORM 1 WITH TRACKING -->
+    <form action="https://formspree.io/f/xkjwkjkg" method="POST" onsubmit="gtag_form_submission()">
 
         <label for="name"><strong>Your Name:</strong></label><br>
         <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
@@ -181,7 +191,8 @@
     <h2>Request a Call Back</h2>
     <p>Prefer to talk first? Leave your details and we’ll call you back.</p>
 
-    <form action="https://formspree.io/f/mvkpdkra" method="POST">
+    <!-- FORM 2 WITH TRACKING -->
+    <form action="https://formspree.io/f/mvkpdkra" method="POST" onsubmit="gtag_form_submission()">
 
         <label for="cb-name"><strong>Your Name:</strong></label><br>
         <input type="text" id="cb-name" name="name" required style="width:100%; padding:10px; margin-bottom:15px;"><br>
